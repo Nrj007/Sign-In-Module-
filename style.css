@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.show {
+  position: relative;
+  height: 100vh;
+}
+
+.image {
+  height: 100%;
+  background-image: url("museum-of-new-zealand-te-papa-tongarewa-8XHXFfC6y0c-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  color: white;
+}
+
+.text h2 {
+  font-family: "OPTINaval";
+  font-size: 100px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+
+.form {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  background-color: #232219;
+  width: 400px;
+  height: 400px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 3rem;
+  border-radius: 0.8em;
+  overflow-x: hidden;
+}
+
+.email,
+.pass {
+  margin-bottom: 1rem;
+}
+
+.head {
+  font-family: "Bivoac";
+  color: white;
+  font-weight: 100;
+  font-size: 30px;
+  margin-bottom: 0.4em;
+  letter-spacing: 2px;
+}
+
+.label {
+  display: block;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.text p {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+.box {
+  margin-top: 0.5rem;
+  outline: none;
+  color: white;
+  height: 1.5rem;
+  background: none;
+  border: white 1px solid;
+  border-radius: 15px;
+  width: 70%;
+  padding: 0.6rem 1.2rem;
+}
+
+.btn button {
+  background-color: #8bc34a;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 15px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+  .text {
+    visibility: hidden;
+  }
+  .form {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (max-width: 600px) {
+  .text {
+    visibility: hidden;
+  }
+  .form {
+    position: fixed;
+    padding-top: 100px;
+    padding-left: 10rem;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
